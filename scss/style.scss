@@ -1,8 +1,16 @@
 
+@import "btnConfig";
+@import "config";
+@import "utilities";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.banner{
+ font-size: 30px;
 }
 
 body {
@@ -20,6 +28,55 @@ a {
 }
 
 .hero {
+  @include set-bg($primary-color);
+  height: 1000px;
+
+
+  ul{
+    display: flex;
+    list-style-type: none;
+  }
+
+  li{
+    padding: 15px;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:15px;
+  }
+
+  &-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 40px;
+    h1{
+      font-size: 60px;
+    }
+  }
+
+  img{
+    width: 70%;
+  }
+
+
+  a{
+    color: white;
+  }
+
+  .btn-primary{
+    display: flex;
+    font-size: 30px;
+  }
+  .btn-secondary{
+    display: flex;
+    font-size: 30px;
+    color: black;
+  }
+
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?

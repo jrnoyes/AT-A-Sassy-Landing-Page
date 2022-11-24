@@ -38,6 +38,10 @@
   padding: 0;
 }
 
+.banner {
+  font-size: 30px;
+}
+
 body {
   background-color: #FFC300;
   font-family: Trebuchet MS, Arial, sans-serif;
@@ -55,10 +59,44 @@ a {
 .hero {
   background-color: #000814;
   color: white;
+  height: 1000px;
+}
+.hero ul {
+  display: flex;
+  list-style-type: none;
+}
+.hero li {
+  padding: 15px;
 }
 .hero nav {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 15px;
+}
+.hero-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-top: 40px;
+}
+.hero-content h1 {
+  font-size: 60px;
+}
+.hero img {
+  width: 70%;
+}
+.hero a {
+  color: white;
+}
+.hero .btn-primary {
+  display: flex;
+  font-size: 30px;
+}
+.hero .btn-secondary {
+  display: flex;
+  font-size: 30px;
+  color: black;
 }
 
 .m-1 {
